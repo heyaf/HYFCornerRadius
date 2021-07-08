@@ -15,7 +15,7 @@
     [mainView drawMyRect];
     [self.view addSubview:mainView];
 ```
-ps:整体思路参照[这里](https://github.com/MrGCY/AnyCornerRadius),主要做了一些优化，原文直接在View上进行设置，所有想使用的View都要继承特定view,个人觉得使用不太方便，所以创建了一个分类，通过runtime添加了分类属性，再进行裁剪
+ps:整体思路参照[这里](https://github.com/MrGCY/AnyCornerRadius),主要做了一些优化，原文直接在View上进行设置，弊端是所有想使用的View都要继承特定view,个人觉得使用不太方便，所以创建了一个分类，通过runtime添加了分类属性，再进行裁剪
 
 ## TODO
 本demo没有对border进行处理，我们的项目中没有用到这里就不再赘述了，需要的同学可以参照该demo进行自定义，原理差不多
